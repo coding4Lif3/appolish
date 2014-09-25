@@ -101,7 +101,7 @@ public class MainActivity extends Activity {
 			public void run() {
 				final int n = mGifDecoder.getFrameCount();
 				final int ntimes = mGifDecoder.getLoopCount();
-				int repetitionCounter = 5;
+				int repetitionCounter = 0;
 				do {
 					for (int i = 0; i < n; i++) {
 						mTmpBitmap = mGifDecoder.getFrame(i);
